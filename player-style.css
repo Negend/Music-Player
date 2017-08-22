@@ -1,0 +1,172 @@
+/*remote*/
+ul,li{margin:0;padding:0;}
+#music-player-box{
+	width: 500px;
+	height: 500px;
+	text-align: center;
+}
+
+.remote{
+	display: inline-block;
+	width: 250px;
+	height: 225px;
+	/*box-shadow: -1px -1px 1em grey, 1px 1px 1em grey;
+	border-radius: 50%;*/
+	margin-top:8vh;
+	/*margin-right:10%;*/
+}
+.p-button{
+	display: inline-block;
+	height:33%;
+	width:96%;
+}
+.top{
+	background:linear-gradient(to bottom,#341dea,#341dea,#341dea,#341dea,#110284);
+	border-bottom: 1px solid white;
+	border-radius: 250px 250px 0 0; 
+}
+
+.middle{
+	background: black;
+	position:relative;
+}
+.bottom{
+	border-top: 1px solid white;
+	background:linear-gradient(to bottom,#341dea,#341dea,#341dea,#341dea,#110284);
+	border-radius: 0 0 250px 250px;
+}
+
+#download-button{
+	height: 100%;
+	width: 100%;
+}
+h3{
+	color:black;
+	margin:2em;
+	font-size:1.2em;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+h2{
+	color:white;
+	margin:5px;
+	font-size:37px;
+	font-weight: bold;
+	text-shadow: 1px 0 11px crimson;
+}
+
+.c-button{
+	width:19%;
+	height: 37%;
+	margin: 12% 5% 0 5%;
+	display: inline-block;
+	color: #341dea;
+	background: black;
+}
+.c-button:hover{
+ color:#530e0e;
+}
+.bottom:hover{
+	background:#530e0e;
+}
+.fa{
+  margin: 5px 0;
+}
+.previous{
+	border-top-left-radius:20px;
+}
+.next{ 
+	border-top-right-radius: 20px;
+}
+
+.track{
+	text-align: left;
+}
+
+#playlist{
+	width:50%;
+	margin:auto;
+	line-height: 1.5;
+}
+.selected{
+	background-color: #530e0e;
+}
+.duration{
+	height:15px;
+	width:100%;
+	text-align: left;
+	bottom:0;
+  position: absolute;
+ 
+  left: 0;
+}
+
+.seconds{
+	width:1%;
+	height:100%;
+	background-color: rgba(83, 14, 14, 0.25);
+	display: inline-block;
+}
+.progress{
+	background-color: #530e0e;
+}
+
+/*
+
+ADD TO HTML 
+
+
+LINKS FOR HTML
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script type="text/javascript" src='player/player-main.js'></script>
+	<link rel="stylesheet" type="text/css" href="player-style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+
+
+
+
+
+<!-- player -->
+		<!-- remote for player -->
+			<div class='remote'>
+				<!-- controls -->
+				<div class='top p-button'>
+					<div class='c-button previous'>
+						<i class="fa fa-step-backward"></i>
+					</div>
+
+					<div class='c-button play'>
+						<i class="fa fa-pause"></i>
+						<i class="fa fa-play"></i>
+					</div>
+
+					<div class='c-button next'>
+						<i class="fa fa-step-forward"></i>
+					</div>
+
+				</div>
+				<!-- song title -->
+				<div class='middle p-button'>
+					<h2 id ='track-name'>Prowl O' Lion</h2>
+					<ul class='duration'></ul>
+				</div>	
+				<!-- download button -->
+				<a id='download-button' href="song/drunk.mp3" download="Test Song.mp3">
+					<div class='bottom p-button'>
+						<h3>Download</h3>
+					</div>
+				</a>
+			</div>
+					<audio id='player'></audio>							
+			
+		<!-- end of remote -->
+			<div id ='playlist'>
+				<h4>Playlist</h4>			
+			</div>
+<!-- End of player -->
+*/
+
+
