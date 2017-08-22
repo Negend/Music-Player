@@ -58,3 +58,5 @@ var tracks = [
 	}
 ]
 ````
+## Developement
+A method to read the songs folder and create the playlist without hardcoding will be part of the next tacks
