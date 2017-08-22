@@ -2,8 +2,8 @@
 ul,li{margin:0;padding:0;}
 #music-player-box{
 	width: 500px;
-	height: 500px;
 	text-align: center;
+	display: inline-block;
 }
 
 .remote{
