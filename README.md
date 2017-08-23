@@ -66,7 +66,7 @@ The player is wrapped in a div box with id 'music-player-box' the css at the mom
 	display: inline-block;
 }
 ````
- 
+read through css file to know the list of id and classes to avoid clashes 
 
 ## Developement
 A method to read the songs folder and create the playlist without hardcoding will be part of the next tasks
