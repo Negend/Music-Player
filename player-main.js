@@ -45,7 +45,7 @@ cover()
 createTimer()
 duration()
 autoPlay()
-
+keys()
 
 function listTracks(){
 	for (var i = 0; i < tracks.length; i++){
@@ -221,7 +221,7 @@ function progressChange(){
 }
 
 function cover(){
-	if ($('music-cover')){
+	if ($('.music-cover')){
 		$('.music-cover').css('width','50vw')
 		$('.music-cover').css('height','35vw')
 		$('.music-cover').css('background-size','100% 100%')
@@ -242,6 +242,18 @@ function autoPlay(){
 		playTrack()
 	}
 }
+function keys(){
+	$(document).keydown(function(e){
+	  if (e.keyCode == 32) { 
+	     $('.play').click()     
+	  }else if (e.keyCode == 39){
+	  	$('.next').click()
+	  }else if (e.keyCode == 37){
+	  	$('.previous').click()
+	  }
+	})
+}
+
 
 
 
