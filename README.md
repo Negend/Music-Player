@@ -58,5 +58,15 @@ var tracks = [
 	}
 ]
 ````
+The player is wrapped in a div box with id 'music-player-box' the css at the moment is this and can be manipulated to fit in website
+````
+#music-player-box{
+	width: 500px;
+	text-align: center;
+	display: inline-block;
+}
+````
+ 
+
 ## Developement
-A method to read the songs folder and create the playlist without hardcoding will be part of the next tacks
+A method to read the songs folder and create the playlist without hardcoding will be part of the next tasks
