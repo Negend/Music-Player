@@ -1,5 +1,5 @@
 /*remote*/
-ul,li{margin:0;padding:0;}
+
 #music-player-box{
 	width: 500px;
 	text-align: center;
@@ -93,6 +93,8 @@ h2{
 	background-color: #530e0e;
 }
 .duration{
+	margin:0;
+	padding:0;
 	height:15px;
 	width:100%;
 	text-align: left;
