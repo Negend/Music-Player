@@ -56,3 +56,17 @@
 		
 <!-- End of player -->
 </div>
+
+    <div id='fileNames'></div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () 
+    {
+        $.get(".", function(data) 
+        {
+            $("#fileNames").append(data);
+        });
+    })
+</script>
