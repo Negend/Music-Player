@@ -157,7 +157,8 @@ function trackUpdate(number){
 	t = number
 	// insert new disc
 	track.src = tracks[number].song
-	$('#download-button').attr('Download', tracks[number].song)
+	$('#download-button').attr('download', tracks[number].title)
+	$('#download-button').attr('href', tracks[number].song)
 	var title = tracks[number].title
 	var cover = tracks[number].cover
 	// song title change
@@ -241,18 +242,7 @@ function autoPlay(){
 		playTrack()
 	}
 }
-var dir = "song/";
-var fileextension = ".mpeg";
-$.ajax({
-    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-    url: dir,
-    success: function (data) {
-        //List all .png file names in the page
-        $(data).find("a:contains(" + fileextension + ")").each(function () {
-            var filename = this.href.replace(window.location.host, "").replace("http://", "");
-            $(".art").append( dir + filename );
-        });
-    }
-});
+
+
 
 })
