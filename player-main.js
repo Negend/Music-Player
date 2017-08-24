@@ -254,7 +254,19 @@ function keys(){
 	})
 }
 
+function loading(){
+	track.onloadstart = function() {
+  	console.log('hililil loading')
+	}
+	track.onwaiting = function() {
+  	console.log(' loading')
+	}
+	track.onplaying = function() {
+  	console.log('finished loading')
+	}
 
+}
 
+loading()
 
 })
